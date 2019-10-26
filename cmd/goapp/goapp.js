@@ -1,12 +1,12 @@
 const etag = '{{.ETag}}'
 
-const goappCache = {
-  name: 'goapp-cache',
-  urls: [
-    {{range. Paths}}'{{.}}',
-    {{end}}'/'
-  ]
-}
+// const goappCache = {
+//   name: 'goapp-cache',
+//   urls: [
+//     {{range. Paths}}'{{.}}',
+//     {{end}}'/'
+//   ]
+// }
 
 self.addEventListener('install', function (event) {
   console.log('intalling goapp worker', etag)
@@ -47,4 +47,9 @@ self.addEventListener('activate', function (event) {
         }))
       })
   )
+})
+
+
+self.addEventListener('push',function(event){
+
 })

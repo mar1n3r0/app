@@ -1,14 +1,17 @@
 // -----------------------------------------------------------------------------
 // Init service worker
 // -----------------------------------------------------------------------------
+let goappSWRegistration
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('/goapp.js')
-    .then(reg => {
-      console.log('offline service worker registered')
+    .then(function (registration) {
+      goappSWRegistration = registration
+      console.log('goapp service worker registration successful with scope: ', registration.scope)
     })
-    .catch(err => {
-      console.error('offline service worker registration failed', err)
+    .catch(function (err) {
+      console.error('goapp service worker registration failed', err)
     })
 }
 
