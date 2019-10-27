@@ -6,6 +6,7 @@ import (
 	"syscall/js"
 
 	"github.com/maxence-charriere/app/pkg/app"
+	"github.com/maxence-charriere/app/pkg/log"
 )
 
 // Hello is a component that describes a hello world. It implements the
@@ -61,9 +62,26 @@ func (h *Hello) OnMenuClick(s, e js.Value) {
 			}},
 		app.MenuItem{Separator: true},
 		app.MenuItem{
+			Label:    "Notifications Subscribe",
+			Disabled: app.Notifications.IsSubscribed(),
+			OnClick: func(s, e js.Value) {
+				sub, err := app.Notifications.Subscribe("BIwtzlDcch_7V_guRIZ6CTGMb3TCiP0vSTRQK14qmRyjqCX1ZwyNXy9SR-HWTvLP-u1hglMVd-yrTU6YfribgpY")
+				if err != nil {
+					log.Error("subscribe to notifications failed").
+						T("error", err)
+					return
+				}
+
+				log.Info("subscribe to notifications success").
+					T("sub", sub)
+			},
+		},
+		app.MenuItem{Separator: true},
+		app.MenuItem{
 			Label: "City example",
 			OnClick: func(s, e js.Value) {
 				app.Navigate("city")
-			}},
+			},
+		},
 	)
 }

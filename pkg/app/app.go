@@ -21,13 +21,12 @@ var (
 	// time.
 	LocalStorage BrowserStorage
 
+	Notifications PushManager
+
 	// SessionStorage is a storage that uses the browser session storage
 	// associated to the document origin. Data stored are encrypted and expire
 	// when the page session ends.
 	SessionStorage BrowserStorage
-
-	// ServerPublicKey is the key used to subscribe to push notification.
-	ServerPublicKey string
 
 	ui         = make(chan func(), 256)
 	components = make(compoBuilder)
