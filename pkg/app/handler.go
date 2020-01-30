@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	inthttp "github.com/maxence-charriere/app/internal/http"
+	inthttp "github.com/mar1n3r0/app/internal/http"
 	pkghttp "github.com/maxence-charriere/app/pkg/http"
 )
 

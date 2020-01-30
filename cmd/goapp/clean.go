@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/maxence-charriere/app/internal/http"
+	"github.com/mar1n3r0/app/internal/http"
 	"github.com/segmentio/conf"
 )
 
