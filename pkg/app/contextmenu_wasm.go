@@ -76,7 +76,7 @@ func (m *contextMenu) Show() {
 		x = winWidth - menuWidth
 	}
 
-	y := cursorY - 30
+	y := cursorY + 30
 	if y+menuHeight > winHeight {
 		y = winHeight - menuHeight
 	}
