@@ -38,9 +38,9 @@ func run() {
 		LocalStorage = newJSStorage("localStorage")
 		SessionStorage = newJSStorage("sessionStorage")
 
-		overrideAnchorClick := js.FuncOf(overrideAnchorClick)
-		defer overrideAnchorClick.Release()
-		js.Global().Set("onclick", overrideAnchorClick)
+		//overrideAnchorClick := js.FuncOf(overrideAnchorClick)
+		//defer overrideAnchorClick.Release()
+		//js.Global().Set("onclick", overrideAnchorClick)
 
 		onpopstate := js.FuncOf(onPopState)
 		defer onpopstate.Release()
