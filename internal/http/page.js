@@ -27,7 +27,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // Init Web Assembly
 // -----------------------------------------------------------------------------
 if (!WebAssembly.instantiateStreaming) {
-  WebAssembly.instantiateStreaming = (resp, importObject) => {
+  WebAssembly.instantiateStreaming = async (resp, importObject) => {
     const source = await (await resp).arrayBuffer()
     return await WebAssembly.instantiate(source, importObject)
   }
