@@ -9,7 +9,7 @@ import (
 	"os/signal"
 	"text/template"
 
-	_ "github.com/maxence-charriere/app/pkg/app"
+	_ "github.com/mar1n3r0/app/pkg/app"
 	"github.com/pkg/errors"
 	"github.com/segmentio/conf"
 )

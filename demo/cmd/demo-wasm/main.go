@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/maxence-charriere/app/pkg/app"
+	"github.com/mar1n3r0/app/pkg/app"
 )
 
 // The app entry point.

@@ -5,9 +5,9 @@
 # app
 
 <p align="center">
-	<a href="https://circleci.com/gh/maxence-charriere/app"><img src="https://circleci.com/gh/maxence-charriere/app.svg?style=svg" alt="Circle CI Go build"></a>
-    <a href="https://goreportcard.com/report/github.com/maxence-charriere/app"><img src="https://goreportcard.com/badge/github.com/maxence-charriere/app" alt="Go Report Card"></a>
-    <a href="https://godoc.org/github.com/maxence-charriere/app/pkg/app"><img src="https://godoc.org/github.com/maxence-charriere/app/pkg/app?status.svg" alt="GoDoc"></a>
+	<a href="https://circleci.com/gh/mar1n3r0/app"><img src="https://circleci.com/gh/mar1n3r0/app.svg?style=svg" alt="Circle CI Go build"></a>
+    <a href="https://goreportcard.com/report/github.com/mar1n3r0/app"><img src="https://goreportcard.com/badge/github.com/mar1n3r0/app" alt="Go Report Card"></a>
+    <a href="https://godoc.org/github.com/mar1n3r0/app/pkg/app"><img src="https://godoc.org/github.com/mar1n3r0/app/pkg/app?status.svg" alt="GoDoc"></a>
 </p>
 
 A [WebAssembly](https://webassembly.org) framework to build GUI with
@@ -17,7 +17,7 @@ A [WebAssembly](https://webassembly.org) framework to build GUI with
 It features:
 
 - [PWA support](https://developers.google.com/web/progressive-web-apps/)
-- [Build tool](https://github.com/maxence-charriere/app/tree/master/cmd/goapp/main.go) that removes the hassle of packaging wasm apps
+- [Build tool](https://github.com/mar1n3r0/app/tree/master/cmd/goapp/main.go) that removes the hassle of packaging wasm apps
 - [React](https://reactjs.org) flavored API
 
 ## Install
@@ -26,10 +26,10 @@ Requires [Go 1.13](https://golang.org/doc/go1.13)
 
 ```sh
 # Package sources + goapp CLI:
-go get -u -v github.com/maxence-charriere/app/cmd/goapp
+go get -u -v github.com/mar1n3r0/app/cmd/goapp
 
 # Package sources only:
-go get -u -v github.com/maxence-charriere/app/pkg/app
+go get -u -v github.com/mar1n3r0/app/pkg/app
 
 ```
 
@@ -82,8 +82,8 @@ package main
 import (
     "log"
 
-    "github.com/maxence-charriere/app/pkg/app"
-    "github.com/maxence-charriere/app/pkg/log"
+    "github.com/mar1n3r0/app/pkg/app"
+    "github.com/mar1n3r0/app/pkg/log"
 )
 
 type Hello struct {
@@ -126,7 +126,7 @@ package main
 import (
     "log"
     "net/http"
-    "github.com/maxence-charriere/app"
+    "github.com/mar1n3r0/app"
 )
 
 func main() {
@@ -142,14 +142,14 @@ func main() {
 ### Build
 
 The whole project can be built with the
-[goapp](https://github.com/maxence-charriere/app/tree/master/cmd/goapp/main.go)
+[goapp](https://github.com/mar1n3r0/app/tree/master/cmd/goapp/main.go)
 CLI tool.
 **goapp** builds the server, the wasm app, imports the required javascript
 support file and puts the pieces together to provide a ready to use project.
 
 ```bash
 # Get the goapp CLI tool:
-go get -u github.com/maxence-charriere/app/cmd/goapp
+go get -u github.com/mar1n3r0/app/cmd/goapp
 
 # Builds a server ready to serve the wasm app and its resources:
 goapp build -v
@@ -175,7 +175,7 @@ demo
         └── main.go
 ```
 
-See a [full example](https://github.com/maxence-charriere/app/tree/master/demo).
+See a [full example](https://github.com/mar1n3r0/app/tree/master/demo).
 
 ## Live demo
 

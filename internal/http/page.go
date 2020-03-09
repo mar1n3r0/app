@@ -14,7 +14,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/maxence-charriere/app/pkg/log"
+	"github.com/mar1n3r0/app/pkg/log"
 )
 
 var lastModified = time.Now().UTC().Format("Mon, 02 Jan 2006 15:04:05 GMT")

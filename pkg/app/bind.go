@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/maxence-charriere/app/pkg/log"
+	"github.com/mar1n3r0/app/pkg/log"
 )
 
 // Binding represents a serie of actions that are executed successively when a

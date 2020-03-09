@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	inthttp "github.com/mar1n3r0/app/internal/http"
-	pkghttp "github.com/maxence-charriere/app/pkg/http"
+	pkghttp "github.com/mar1n3r0/app/pkg/http"
 )
 
 // ProgressiveAppConfig represents the configuration used to describe a
