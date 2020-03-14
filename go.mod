@@ -1,6 +1,6 @@
 module github.com/mar1n3r0/app
 
-go 1.13
+go 1.14
 
 require (
 	github.com/disintegration/imaging v1.6.2
