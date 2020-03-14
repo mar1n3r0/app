@@ -22,7 +22,7 @@ It features:
 
 ## Install
 
-Requires [Go 1.13](https://golang.org/doc/go1.13)
+Requires [Go 1.14](https://golang.org/doc/go1.14)
 
 ```sh
 # Package sources + goapp CLI:
