@@ -14,16 +14,19 @@
     <style media="all" type="text/css">
 {{.DefaultCSS}}
     </style>
-    <link rel="icon" type="image/png" href="/icon-192.png">
-    <link rel="apple-touch-icon" href="/icon-192.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="/static/icon-192.png">
+    <link rel="apple-touch-icon" href="/static/icon-192.png">
+    <link rel="manifest" href="/static/manifest.json">
     <link type="text/css" rel="stylesheet" href="/static/app.css">
+    <link type="text/css" rel="stylesheet" href="/static/form.css">
+    <link type="text/css" rel="stylesheet" href="/static/gallery.css">
+    <link type="text/css" rel="stylesheet" href="/static/hello.css">
     <script src="/static/wasm_exec.js"></script>
     <script src="/static/goapp.js"></script>
 </head>
 <body>
     <div class="App_Loader">
-        <img id="App_LoadingIcon" class="App_InfiniteSpin" src="/icon-512.png">
+        <img id="App_LoadingIcon" class="App_InfiniteSpin" src="/static/icon-512.png">
         <p id="App_LoadingLabel">{{.LoadingLabel}}</p>
     </div>
 </body>
