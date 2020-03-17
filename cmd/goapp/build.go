@@ -62,7 +62,7 @@ func buildProject(ctx context.Context, args []string) {
 
 func build(ctx context.Context, c buildConfig) error {
 	c.serverDir = filepath.Join(c.rootDir, "cmd", c.Name+"-server")
-	c.webDir = filepath.Join(c.serverDir, "static")
+	c.webDir = filepath.Join(c.serverDir, "web")
 	c.wasmDir = filepath.Join(c.rootDir, "cmd", c.Name+"-wasm")
 
 	log("building wasm app")
