@@ -55,7 +55,7 @@ func initProjectLayout(rootDir, name string) error {
 	dirs := []string{
 		serverdir,
 		wasmdir,
-		filepath.Join(serverdir, "web"),
+		filepath.Join(serverdir, "static"),
 	}
 
 	for _, dir := range dirs {

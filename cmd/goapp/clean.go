@@ -44,7 +44,7 @@ func cleanProject(ctx context.Context, args []string) {
 	}
 
 	pkgDir := filepath.Join(rootDir, "cmd", c.Name+"-server")
-	webDir := filepath.Join(pkgDir, "web")
+	webDir := filepath.Join(pkgDir, "static")
 
 	serverExec := filepath.Join(pkgDir, c.Name+"-server")
 	if runtime.GOOS == "windows" {

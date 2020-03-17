@@ -83,7 +83,7 @@ func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func (h *Handler) init() {
 	webDir := h.WebDir
 	if webDir == "" {
-		webDir = "web"
+		webDir = "static"
 	}
 
 	if h.LoadingLabel == "" {
