@@ -14,18 +14,18 @@
     <style media="all" type="text/css">
 {{.DefaultCSS}}
     </style>
-    <link rel="icon" type="image/png" href="/web/icon-192.png">
-    <link rel="apple-touch-icon" href="/web/icon-192.png">
-    <link rel="manifest" href="/web/manifest.json">
-    <link type="text/css" rel="stylesheet" href="/web/app.css">
-    <link type="text/css" rel="stylesheet" href="/web/form.css">
-    <link type="text/css" rel="stylesheet" href="/web/gallery.css">
-    <link type="text/css" rel="stylesheet" href="/web/hello.css">
-    <script src="/web/wasm_exec.js"></script>
-    <script src="/web/goapp.js"></script>
+    {{range .CSS}}<link type="text/css" rel="stylesheet" href="{{.}}">
+    {{end}}
+    <link rel="icon" type="image/png" href="/icon-192.png">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="manifest" href="/manifest.json">
+    {{range .Scripts}}<script src="{{.}}"></script>
+    {{end}}
     <script>
 {{.AppJS}}
     </script>
+    {{range .Headers}}{{.}}
+    {{end}}
 </head>
 <body>
     <div class="App_Loader">
