@@ -76,7 +76,7 @@ func (p *Page) init() {
 	}{
 		AppJS:        pageJS,
 		Author:       p.Author,
-		CSS:          filepathsFromDir(p.WebDir+"static/", ".css"),
+		CSS:          filepathsFromDir(p.WebDir, ".css"),
 		DefaultCSS:   pageCSS,
 		Description:  p.Description,
 		Headers:      p.Headers,
@@ -85,7 +85,7 @@ func (p *Page) init() {
 		LoadingLabel: p.LoadingLabel,
 		Name:         p.Name,
 		ThemeColor:   p.ThemeColor,
-		Scripts:      filepathsFromDir(p.WebDir+"static/", ".js"),
+		Scripts:      filepathsFromDir(p.WebDir, ".js"),
 	}); err != nil {
 		log.Error("generating page failed").
 			T("error", err).

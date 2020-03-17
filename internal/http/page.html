@@ -13,19 +13,12 @@
 
     <style media="all" type="text/css">
 {{.DefaultCSS}}
-    </style>
-    {{range .CSS}}<link type="text/css" rel="stylesheet" href="{{.}}">
-    {{end}}
     <link rel="icon" type="image/png" href="/icon-192.png">
     <link rel="apple-touch-icon" href="/icon-192.png">
     <link rel="manifest" href="/manifest.json">
-    {{range .Scripts}}<script src="{{.}}"></script>
-    {{end}}
-    <script>
-{{.AppJS}}
-    </script>
-    {{range .Headers}}{{.}}
-    {{end}}
+    <link type="text/css" rel="stylesheet" href="/static/app.css">
+    <script src="/static/wasm_exec.js"></script>
+    <script src="/static/goapp.js"></script>
 </head>
 <body>
     <div class="App_Loader">
