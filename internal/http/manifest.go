@@ -55,12 +55,12 @@ func (m *Manifest) init() {
 		Icons: []manifestIcon{
 			{
 				Sizes: "192x192",
-				Src:   "/icon-192.png",
+				Src:   "/web/icon-192.png",
 				Type:  "image/png",
 			},
 			{
 				Sizes: "512x512",
-				Src:   "/icon-512.png",
+				Src:   "/web/icon-512.png",
 				Type:  "image/png",
 			},
 		},
